@@ -25,6 +25,7 @@ public class BasePage {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(properties.getValue("TIMEOUT")), TimeUnit.SECONDS);
 		driver.get(properties.getValue("URL"));
+		
 	}
 	
 	/**
